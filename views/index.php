@@ -45,7 +45,7 @@ foreach ($downloads as $download) {
 		<td><code><?php echo $download->id;?></code></td>
 		<td><code><?php echo $download->downloads; ?></code></td>
 		<td><code><?php echo date('m/d/Y',strtotime($download->created)); ?></code></td>
-		<td><code><?php echo !empty($download->expires) ? date('m/d/Y',strtotime($download->expires)) : 'never'; ?></code></td>
+		<td><code><?php echo !empty($download->expires) ? date('m/d/Y',strtotime($download->expires)) : __('never'); ?></code></td>
 		<td>
 			<?php echo "<a href=\"/download-file/{$download->id}/{$download->filename}\" target=\"_blank\" title=\"{$download->filename}\"><img src=\"".PLUGINS_URI."/downloads/images/icon-open.png\" alt=\"view icon\" title=\"View\"></a>"; ?>
 			<a class="edit-link" name="<?php echo $name;?>" href="<?php echo get_url('plugin/downloads/edit/'.$download->id); ?>"><img src="<?php echo PLUGINS_URI;?>/downloads/images/icon-edit.png" alt="edit icon" title="Edit <?php echo $name;?>" /></a>
