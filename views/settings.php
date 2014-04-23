@@ -17,14 +17,14 @@ if (!defined('IN_CMS')) { exit(); }
 		<legend style="padding: 0em 0.5em 0em 0.5em; font-weight: bold;"><?php echo __('Paths'); ?></legend>
 		<table class="fieldset" cellpadding="0" cellspacing="0" border="0">
 			<tr>
-				<td class="label"><label for="download_path"><?php echo __('Downloads Path:');?> </label></td>
+				<td class="label"><label for="download_path"><?php echo __('Downloads Path');?> </label></td>
 				<td class="field"><input name="download_path" id="download_path" type="text" size="35" maxsize="255" value="<?php echo $download_path;?>"/></td>
-				<td class="help"><?php echo __('System path relative to CMS_ROOT.'); ?></td>
+				<td class="help"><?php echo __('System path relative to CMS_ROOT'); ?></td>
 			</tr>
 			<tr>
-				<td class="label"><label for="download_uri"><?php echo __('Downloads URI:');?> </label></td>
+				<td class="label"><label for="download_uri"><?php echo __('Downloads URI');?> </label></td>
 				<td class="field"><input name="download_uri" id="download_uri" type="text" size="35" maxsize="255" value="<?php echo $download_uri;?>"/></td>
-				<td class="help"><?php echo __('URI relative to URI_PUBLIC.'); ?></td>
+				<td class="help"><?php echo __('URI relative to URI_PUBLIC'); ?></td>
 			</tr>
 		</table>
 	</fieldset>
@@ -33,9 +33,9 @@ if (!defined('IN_CMS')) { exit(); }
 		<legend style="padding: 0em 0.5em 0em 0.5em; font-weight: bold;"><?php echo __('Upload Controls');?></legend>
 		<table class="fieldset" cellpadding="0" cellspacing="0" border="0">
 			<tr>
-				<td class="label"><label for="filetypes"><?php echo __('Allowed File Types:');?> </label></td>
+				<td class="label"><label for="filetypes"><?php echo __('Allowed filetypes');?> </label></td>
 				<td class="field"><input name="filetypes" id="filetypes" type="text" size="35" maxsize="255" value="<?php echo $filetypes;?>"/></td>
-				<td class="help"><?php echo __('Allowed file extensions.');?></td>
+				<td class="help"><?php echo __('Allowed file extensions');?></td>
 			</tr>
 		</table>
 	</fieldset>
@@ -44,19 +44,19 @@ if (!defined('IN_CMS')) { exit(); }
 		<legend style="padding: 0em 0.5em 0em 0.5em; font-weight: bold;"><?php echo __('File Creation Defaults'); ?></legend>
 		<table class="fieldset" cellpadding="0" cellspacing="0" border="0">
 			<tr>
-				<td class="label"><label for="umask"><?php echo __('Umask:');?> </label></td>
+				<td class="label"><label for="umask"><?php echo __('Umask');?> </label></td>
 				<td class="field"><input name="umask" id="umask" type="text" size="35" maxsize="255" value="<?php echo $umask;?>"/></td>
 				<td class="help"><?php echo __('Default PHP umask; see <a href="http://php.net/manual/en/function.umask.php">umask()</a>');?></td>
 			</tr>
 			<tr>
-				<td class="label"><label for="dirmode"><?php echo __('Directory Creation Mode:');?> </label></td>
+				<td class="label"><label for="dirmode"><?php echo __('Directory Creation Mode');?> </label></td>
 				<td class="field"><input name="dirmode" id="dirmode" type="text" size="35" maxsize="255" value="<?php echo $dirmode;?>"/></td>
-				<td class="help"><?php echo __('Default PHP directory creation mode; see <a href="http://us3.php.net/manual/en/function.chmod.php">chmod()</a>');?></td>
+				<td class="help"><?php echo __('Default PHP directory creation mode; see <a href="http://php.net/manual/en/function.chmod.php">chmod()</a>');?></td>
 			</tr>
 			<tr>
-				<td class="label"><label for="filemode"><?php echo __('File Creation Mode:');?> </label></td>
+				<td class="label"><label for="filemode"><?php echo __('File Creation Mode');?> </label></td>
 				<td class="field"><input name="filemode" id="filemode" type="text" size="35" maxsize="255" value="<?php echo $filemode;?>"/></td>
-				<td class="help"><?php echo __('Default PHP file creation mode; see <a href="http://us3.php.net/manual/en/function.chmod.php">chmod()</a>');?></td>
+				<td class="help"><?php echo __('Default PHP file creation mode; see <a href="http://php.net/manual/en/function.chmod.php">chmod()</a>');?></td>
 			</tr>
 		</table>
 	</fieldset>
