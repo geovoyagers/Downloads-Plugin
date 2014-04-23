@@ -1,6 +1,6 @@
 <?php
 /**
-* English file for plugin tagger
+* BAsic english lang file for download mananger
 *
 * @package wolf
 * @subpackage Downloads
