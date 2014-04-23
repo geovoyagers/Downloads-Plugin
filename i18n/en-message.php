@@ -1,6 +1,6 @@
 <?php
 /**
-* BAsic english lang file for download mananger
+* Basic english lang file for download mananger
 *
 * @package wolf
 * @subpackage Downloads
